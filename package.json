@@ -1,0 +1,19 @@
+{
+  "name": "business_theme",
+  "version": "1.0.0",
+  "description": "And Bootstrap wordpress theme for business.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurenceM2015/business_theme.git"
+  },
+  "author": "Laurence Mabilleau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaurenceM2015/business_theme/issues"
+  },
+  "homepage": "https://github.com/LaurenceM2015/business_theme#readme"
+}
