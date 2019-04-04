@@ -1,3 +1,33 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "bases/animations";
+@import "bases/bases";
+@import "bases/typography";
+@import "bases/utilities";
+
+// COMPONENTS 
+
+@import "components/articles";
+@import "components/buttons";
+@import "components/cards";
+@import "components/compositions";
+@import "components/features-box";
+@import "components/forms";
+@import "components/storys";
+
+
+
+// SITE LAYOUTS
+@import "layouts/footer";
+@import "layouts/grids";
+@import "layouts/headers";
+@import "layouts/navigations";
+
+
+
+
 /* BASE STYLING */
 
 /* Primary Color */
@@ -8,6 +38,13 @@
 --terthery-color: #e44d26;
 
 */
+
+
+
+
+
+
+
 
 // VARIABLES 
 $seconde-color: #fc6f46;

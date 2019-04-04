@@ -1,0 +1,77 @@
+
+// COSTUM MEDIA QUERY MANAGER.
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+
+// USING EM instead of PIXEL
+
+@mixin respond($breakpoint) {
+
+    // 600px / 16 = 37.5em
+    @if $breakpoint == phone {
+        @media only screen and (min-width: 37.5em) { @content };
+    }
+
+    @if $breakpoint == tab-port {
+        // @media (min-width: 75em) { @content };
+     // 800px / 16 = 50em
+        @media only screen and (min-width: 50em) { @content };
+     }
+
+      // 1000px / 16 = 56.25em 
+    @if $breakpoint == tab-land {
+        @media only screen and (min-width: 62.5em) { @content };
+    }
+ 
+     // 1800px / 16px = 112.5em
+     @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };
+     }
+    
+    
+}
+
+
+
+
+
+
+
+//////////////////////////////////////////////// 
+///// BOX SHADOW MIXINS
+
+@mixin boxShadow($top, $left, $blur, $color, $inset:"") {
+
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+  }
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// TO CENTER THE BOX
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
