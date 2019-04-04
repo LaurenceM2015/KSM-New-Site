@@ -216,6 +216,10 @@ section {
   font-size: 18px;
   line-height: 2em; }
 
+body {
+  padding-top: 9rem;
+  font-size: 16px; }
+
 h1, h2, h3 {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif; }
@@ -355,49 +359,22 @@ footer {
   padding-top: 20px; }
 
 /* LAYOUT: Header */
-.header {
+.jumbotron {
   margin: 0 !important;
-  height: 100vh;
+  height: 80vh;
   background: url(../img/bg.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
-  padding: 15.6rem 0 10rem; }
-  .header__jumbotron h1 {
+  background-position: center; }
+  @media (max-width: 768px) {
+    .jumbotron {
+      min-height: 300px; } }
+  .jumbotron h1 {
     font-size: 55px; }
   @media (max-width: 768px) {
-    .header__jumbotron img {
+    .jumbotron img {
       display: none; } }
 
 .hero-text {
   padding: 20px 0; }
 
 /* MAIN NAVIGATION */
-.navbar {
-  background-color: #fff !important; }
-  .navbar__toggler-button {
-    background-color: #e56664 !important;
-    border-color: #fc6f46 !important;
-    border: none;
-    border-radius: 0; }
-  .navbar__logo-img {
-    height: 5rem; }
-  .navbar__item:not(:last-child) {
-    margin-right: 1rem;
-    border-right: 1px solid #ccc !important; }
-  .navbar__link {
-    text-transform: uppercase;
-    color: #200e0e !important;
-    font-size: .9rem; }
-  .navbar small {
-    text-transform: capitalize;
-    display: block; }
-
-.navbar-nav .active > .nav-link,
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show,
-.navbar-nav .show > .nav-link {
-  background-color: #e56664 !important;
-  color: #fff !important; }
-
-.navbar-dark .navbar-toggler-icon {
-  color: #fff !important; }

@@ -1,32 +1,35 @@
  /* LAYOUT: Header */
 
-
-  
- .jumbotron{
+ .header{
     margin:0 !important;
-    height: 80vh;
+    height: 100vh;
     background:url(../img/bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 
-    @media(max-width:768px){
-        min-height:300px;
+    padding: 15.6rem 0 10rem;
+    
 
-    }
-
-    h1{
-        font-size:55px;
-    }
-
-    img{
-        @media(max-width:768px){
-            display:none;
+    &__jumbotron{
+        
+        h1{
+            font-size:55px;
         }
-
+    
+        img{
+            @media(max-width:768px){
+                display:none;
+            }
+    
+        }
+        
+        
     }
-    
-    
-}
+
+ }
+
+  
+ 
 
 
 
