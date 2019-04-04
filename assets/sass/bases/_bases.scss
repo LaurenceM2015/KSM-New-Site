@@ -76,7 +76,7 @@ h2, h3, h4{color: $color-secondary;}
 // SECONDARY HEADING
 
 .heading-secondary{
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark-1);
     -webkit-background-clip: text;
     text-align: center !important;
     display: inline-block;
@@ -127,4 +127,67 @@ h2, h3, h4{color: $color-secondary;}
             
     }
     
+}
+
+
+section{
+    padding:150px 0;
+}
+
+.section-gray{
+    background:#f4f4f4;
+}
+
+.section-primary{
+    background:#e56664;
+    color:#fff;
+    
+}
+
+.email a{
+    color:#e56664;
+}
+
+
+.section-secondary{
+    background:#e44d26;
+    color:#fff;
+    
+}
+
+.section-title{
+    padding:10px;
+    background:#e56664;
+    color:#fff;
+}
+
+.section-title small{
+    color:#ccc !important;
+}
+
+.slogan{
+    text-align: center;
+}
+
+.slogan h1{
+    font-size:50px;
+    margin-bottom:25px;
+}
+
+.slogan p{
+    font-size:20px;
+}
+
+.slogan a{
+    margin-top:20px;
+}
+
+.fa-color{
+    color:#e56664;
+}
+
+.feature-list .nav-item{
+    list-style: none;
+    font-size:18px;
+    line-height: 2em;
 }

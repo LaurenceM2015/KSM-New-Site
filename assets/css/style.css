@@ -14,8 +14,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 :root {
   --color-white: #fff;
-  --color-primary: #18BC9C;
-  --color-primary-light: #18BC9C;
+  --color-primary: #e56664;
+  --color-primary-light: #fc6f46;
   --color-primary-dark: #15a589;
   --color-secondary: #2C3E50;
   --color-secondary-dark: #273748;
@@ -131,7 +131,7 @@ h2, h3, h4 {
         font-size: 2rem; } }
 
 .heading-secondary {
-  background-image: linear-gradient(to right, #7ed56f, #15a589);
+  background-image: linear-gradient(to right, #fc6f46, #823a39);
   -webkit-background-clip: text;
   text-align: center !important;
   display: inline-block;
@@ -166,6 +166,60 @@ h2, h3, h4 {
       line-height: 145%;
       width: 70%;
       margin-left: 15%; } }
+
+section {
+  padding: 150px 0; }
+
+.section-gray {
+  background: #f4f4f4; }
+
+.section-primary {
+  background: #e56664;
+  color: #fff; }
+
+.email a {
+  color: #e56664; }
+
+.section-secondary {
+  background: #e44d26;
+  color: #fff; }
+
+.section-title {
+  padding: 10px;
+  background: #e56664;
+  color: #fff; }
+
+.section-title small {
+  color: #ccc !important; }
+
+.slogan {
+  text-align: center; }
+
+.slogan h1 {
+  font-size: 50px;
+  margin-bottom: 25px; }
+
+.slogan p {
+  font-size: 20px; }
+
+.slogan a {
+  margin-top: 20px; }
+
+.fa-color {
+  color: #e56664; }
+
+.feature-list .nav-item {
+  list-style: none;
+  font-size: 18px;
+  line-height: 2em; }
+
+body {
+  padding-top: 9rem;
+  font-size: 16px; }
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif; }
 
 .u-text-uppercase {
   text-transform: uppercase; }
@@ -217,30 +271,6 @@ h2, h3, h4 {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
-
-/* BASE STYLING */
-/* Primary Color */
-/*
---primary-color: #e56664;
---secondary-color:#fc6f46;
---terthery-color: #e44d26;
-
-*/
-body {
-  padding-top: 90px;
-  font-size: 16px; }
-
-h1, h2, h3 {
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif; }
-
-h2 {
-  padding-bottom: 50px;
-  margin-bottom: 25px; }
-
-/* HEADER */
-.hero-text {
-  padding: 20px 0; }
 
 /* =========================*/
 /* Botton components 		*/
@@ -319,43 +349,30 @@ h2 {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
-section {
-  padding: 150px 0; }
+footer {
+  text-align: center;
+  height: 60px;
+  background: #f4f4f4;
+  padding-top: 20px; }
 
-.section-gray {
-  background: #f4f4f4; }
+/* LAYOUT: Header */
+.jumbotron {
+  margin: 0 !important;
+  height: 80vh;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 768px) {
+    .jumbotron {
+      min-height: 300px; } }
+  .jumbotron h1 {
+    font-size: 55px; }
+  @media (max-width: 768px) {
+    .jumbotron img {
+      display: none; } }
 
-.section-primary {
-  background: #e56664;
-  color: #fff; }
-
-.email a {
-  color: #e56664; }
-
-.section-secondary {
-  background: #e44d26;
-  color: #fff; }
-
-.section-title {
-  padding: 10px;
-  background: #e56664;
-  color: #fff; }
-
-.section-title small {
-  color: #ccc !important; }
-
-.slogan {
-  text-align: center; }
-
-.slogan h1 {
-  font-size: 50px;
-  margin-bottom: 25px; }
-
-.slogan p {
-  font-size: 20px; }
-
-.slogan a {
-  margin-top: 20px; }
+.hero-text {
+  padding: 20px 0; }
 
 /* MAIN NAVIGATION */
 /* navbar-nav = nav*/
@@ -403,30 +420,6 @@ a.nav-link span {
   background: #e56664 !important;
   color: #fff !important; }
 
-.jumbotron {
-  margin: 0 !important;
-  height: 80vh;
-  background: url(../img/bg.jpg) no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.jumbotron h1 {
-  font-size: 55px; }
-
-.fa-color {
-  color: #e56664; }
-
-.feature-list .nav-item {
-  list-style: none;
-  font-size: 18px;
-  line-height: 2em; }
-
-footer {
-  text-align: center;
-  height: 60px;
-  background: #f4f4f4;
-  padding-top: 20px; }
-
 @media (max-width: 990px) {
   .navbar-header {
     float: none; }
@@ -453,9 +446,3 @@ footer {
     border-right: none; }
   .collapse.in {
     display: block !important; } }
-
-@media (max-width: 768px) {
-  .jumbotron {
-    min-height: 300px; }
-  .jumbotron img {
-    display: none; } }

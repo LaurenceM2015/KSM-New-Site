@@ -1,0 +1,42 @@
+ /* LAYOUT: Header */
+
+
+  
+ .jumbotron{
+    margin:0 !important;
+    height: 80vh;
+    background:url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media(max-width:768px){
+        min-height:300px;
+
+    }
+
+    h1{
+        font-size:55px;
+    }
+
+    img{
+        @media(max-width:768px){
+            display:none;
+        }
+
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+ .hero-text{
+    padding: 20px 0;
+}
