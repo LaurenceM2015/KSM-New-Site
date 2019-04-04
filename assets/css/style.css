@@ -374,6 +374,9 @@ footer {
 /* MAIN NAVIGATION */
 .navbar {
   background-color: #fff !important; }
+  @media only screen and (min-width: 50em) {
+    .navbar {
+      transition: background-color .5s ease-in-out,padding .5s ease-in-out; } }
   .navbar__toggler-button {
     background-color: #e56664 !important;
     border-color: #fc6f46 !important;
@@ -387,7 +390,11 @@ footer {
   .navbar__link {
     text-transform: uppercase;
     color: #200e0e !important;
-    font-size: .9rem; }
+    font-size: .9rem;
+    transition: background-color .3s ease-in-out; }
+    .navbar__link:hover {
+      background-color: #e56664 !important;
+      color: #fff !important; }
   .navbar small {
     text-transform: capitalize;
     display: block; }
@@ -401,3 +408,9 @@ footer {
 
 .navbar-dark .navbar-toggler-icon {
   color: #fff !important; }
+
+.js-scroll-trigger {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -webkit-transform;
+  -moz-transition-duration: 1s; }

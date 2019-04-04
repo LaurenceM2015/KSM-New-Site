@@ -3,6 +3,13 @@
 .navbar{
     background-color: $color-white !important;
 
+    
+   
+
+    @include respond(tab-port){
+        transition: background-color .5s ease-in-out,padding .5s ease-in-out;
+    }
+
      &__toggler-button{
         background-color:$color-primary !important;
         border-color: $color-primary-light !important;
@@ -34,8 +41,13 @@
         text-transform: uppercase;
         color: $color-text !important;
         font-size: .9rem;
+        transition: background-color .3s ease-in-out;
 
-       
+        &:hover{
+            background-color:$color-primary !important;
+            color: $color-white !important; 
+        }
+
     }
 
     
@@ -61,4 +73,11 @@
 .navbar-dark .navbar-toggler-icon{
     
     color: $color-white !important;
+}
+
+.js-scroll-trigger{
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -webkit-transform;
+    -moz-transition-duration: 1s;
 }
