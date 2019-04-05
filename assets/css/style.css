@@ -92,6 +92,55 @@ h1, h2 {
 h2, h3, h4 {
   color: #2C3E50; }
 
+.page-section {
+  padding: 8rem 0; }
+
+.section-gray {
+  background: #f4f4f4; }
+
+.section-primary {
+  background: #e56664;
+  color: #fff; }
+
+.section-dark {
+  background-color: #191919; }
+
+.email a {
+  color: #e56664; }
+
+.section-secondary {
+  background: #e44d26;
+  color: #fff; }
+
+.section-title {
+  padding: 10px;
+  background: #e56664;
+  color: #fff; }
+
+.section-title small {
+  color: #ccc !important; }
+
+.slogan {
+  text-align: center; }
+
+.slogan h1 {
+  font-size: 50px;
+  margin-bottom: 25px; }
+
+.slogan p {
+  font-size: 20px; }
+
+.slogan a {
+  margin-top: 20px; }
+
+.fa-color {
+  color: #e56664; }
+
+.feature-list .nav-item {
+  list-style: none;
+  font-size: 18px;
+  line-height: 2em; }
+
 .heading-primary {
   color: #fff;
   margin-bottom: 4rem;
@@ -157,68 +206,6 @@ h2, h3, h4 {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
-
-.long-copy {
-  width: 80%;
-  margin-left: 10%; }
-  @media only screen and (min-width: 50em) {
-    .long-copy {
-      line-height: 145%;
-      width: 70%;
-      margin-left: 15%; } }
-
-header {
-  padding: 156px 0 100px; }
-
-section {
-  padding: 150px 0; }
-
-.section-gray {
-  background: #f4f4f4; }
-
-.section-primary {
-  background: #e56664;
-  color: #fff; }
-
-.email a {
-  color: #e56664; }
-
-.section-secondary {
-  background: #e44d26;
-  color: #fff; }
-
-.section-title {
-  padding: 10px;
-  background: #e56664;
-  color: #fff; }
-
-.section-title small {
-  color: #ccc !important; }
-
-.slogan {
-  text-align: center; }
-
-.slogan h1 {
-  font-size: 50px;
-  margin-bottom: 25px; }
-
-.slogan p {
-  font-size: 20px; }
-
-.slogan a {
-  margin-top: 20px; }
-
-.fa-color {
-  color: #e56664; }
-
-.feature-list .nav-item {
-  list-style: none;
-  font-size: 18px;
-  line-height: 2em; }
-
-h1, h2, h3 {
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif; }
 
 .u-text-uppercase {
   text-transform: uppercase; }
@@ -347,6 +334,19 @@ h1, h2, h3 {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.card {
+  border: 0;
+  border-bottom: 0.25rem solid #e56664; }
+  .card h4 {
+    font-size: 1.2rem;
+    font-family: 'Varela Round';
+    text-transform: uppercase;
+    letter-spacing: 0.15rem; }
+  .card hr {
+    border-color: #e56664;
+    border-width: 0.25rem;
+    width: 3rem; }
 
 footer {
   text-align: center;

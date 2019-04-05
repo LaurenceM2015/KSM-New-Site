@@ -17,127 +17,9 @@ h1, h2{
 h2, h3, h4{color: $color-secondary;}
 
 
-
-.heading-primary {
-    color: $color-white;
-    margin-bottom: 4rem;
-
-    // to fix animation element shake.
-    backface-visibility: hidden; 
-
-    &--main {
-        font-family: Montserrat;
-        display: block;
-        font-size: 3.5rem;
-        font-weight: 700;
-        letter-spacing: 1rem;
-        padding-bottom: 1rem;
-
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-    
-        // animation testing
-        //animation: moveInLeft 1s ease-out;
-
-        /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */
-
-        @include respond(tab-port){
-            font-size: 4.5rem;
-        }
-    }
-
-    &--sub {
-        display: block;
-        font-size: 1.6rem;
-        font-family: Lato;
-        font-weight: 500;
-        letter-spacing: .2rem;
-       
-
-        // animation testing
-        animation: moveInRight 1s ease-out;
-        /*
-        animation-timing-function: ease-in;
-        animation-name: moveInRight;
-        animation-duration: 5s;
-        */
-
-        @include respond(tab-port) {
-            letter-spacing: .5rem;
-            font-size: 2rem;
-        }
-    }
+.page-section{
+    padding: 8rem 0;
 }
-
-// SECONDARY HEADING
-
-.heading-secondary{
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark-1);
-    -webkit-background-clip: text;
-    text-align: center !important;
-    display: inline-block;
-    font-size: 3rem;
-    color: transparent;
-    letter-spacing: .3px;
-    transition: all .2s;
-
-    &:hover{
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-    }
-    
-}
-
-
-
-.heading-tertiary {
-    text-transform: capitalize;
-    color: $color-secondary;
-    font-size: 1.8rem;
-    font-weight: 700;
-
-    &__sub{
-        font-style: italic;
-        margin-left: 1rem;
-        font-size: 1.5rem;
-    }
-    
-}
-
-.paragraph {
-    font-size: $default-font-size;
-
-    &:not(:last-child) {
-        margin-bottom: 3rem;
-    }
-}
-
-.long-copy {
-    width: 80%;
-    margin-left: 10%;
-
-    @include respond(tab-port) {
-        line-height: 145%;
-        width: 70%;
-        margin-left: 15%;
-            
-    }
-    
-}
-
-
-header {
-    padding: 156px 0 100px;
-  }
-  
-  section {
-    padding: 150px 0;
-  }
-  
 
 .section-gray{
     background:#f4f4f4;
@@ -147,6 +29,10 @@ header {
     background:#e56664;
     color:#fff;
     
+}
+
+.section-dark{
+    background-color: #191919;
 }
 
 .email a{
@@ -196,3 +82,5 @@ header {
     font-size:18px;
     line-height: 2em;
 }
+  
+  
