@@ -17,13 +17,7 @@
         border-radius: 0;
      }
 
-     .navbar-toggler-icon{
-       
-     }
-
-    &__brand{
-
-    }
+    
 
     &__logo-img{
         height: 5rem;
@@ -50,8 +44,6 @@
 
     }
 
-    
-
     small{
         text-transform: capitalize;
         display: block;
@@ -77,7 +69,11 @@
 
 .js-scroll-trigger{
     -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
     -moz-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
+    transition-property: transform;
+    transition-duration: 1.s;
+   
+    
 }
