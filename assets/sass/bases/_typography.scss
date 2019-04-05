@@ -58,7 +58,7 @@
 // SECONDARY HEADING
 
 .heading-secondary{
-    background-image: linear-gradient(to right, $color-white, $color-primary-red);
+    
     -webkit-background-clip: text;
     text-align: center !important;
     
@@ -70,6 +70,14 @@
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+
+    &--1{
+      background-image: linear-gradient(to right, $color-primary-dark-1, $color-primary-red);
+    }
+
+    &--2{
+      background-image: linear-gradient(to right, $color-white, $color-primary-red);
     }
     
 }
@@ -96,5 +104,11 @@
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
+
+.page-header {
+  padding-bottom: .9rem;
+  margin: 4rem 0 2rem;
+  border-bottom: .1rem solid $color-secondary;
 }
 

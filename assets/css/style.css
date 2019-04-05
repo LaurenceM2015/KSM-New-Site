@@ -180,7 +180,6 @@ h2, h3, h4 {
         font-size: 2rem; } }
 
 .heading-secondary {
-  background-image: linear-gradient(to right, #fff, #d92b28);
   -webkit-background-clip: text;
   text-align: center !important;
   font-size: 3rem;
@@ -190,6 +189,10 @@ h2, h3, h4 {
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .heading-secondary--1 {
+    background-image: linear-gradient(to right, #823a39, #d92b28); }
+  .heading-secondary--2 {
+    background-image: linear-gradient(to right, #fff, #d92b28); }
 
 .heading-tertiary {
   text-transform: capitalize;
@@ -205,6 +208,11 @@ h2, h3, h4 {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.page-header {
+  padding-bottom: .9rem;
+  margin: 4rem 0 2rem;
+  border-bottom: 0.1rem solid #2C3E50; }
 
 .u-text-uppercase {
   text-transform: uppercase; }
