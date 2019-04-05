@@ -58,10 +58,10 @@
 // SECONDARY HEADING
 
 .heading-secondary{
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark-1);
+    background-image: linear-gradient(to right, $color-white, $color-primary-red);
     -webkit-background-clip: text;
     text-align: center !important;
-    display: inline-block;
+    
     font-size: 3rem;
     color: transparent;
     letter-spacing: .3px;
