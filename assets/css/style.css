@@ -411,6 +411,8 @@ footer {
 
 .js-scroll-trigger {
   -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
   -moz-transition-property: -webkit-transform;
-  -moz-transition-duration: 1s; }
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  transition-property: transform;
+  transition-duration: 1s; }
