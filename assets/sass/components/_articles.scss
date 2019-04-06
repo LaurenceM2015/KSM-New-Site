@@ -1,0 +1,28 @@
+.article{
+
+    @include respond(tab-port){
+        
+            
+    }
+    &__left{
+
+    }
+
+    &__right{
+
+    }
+
+    &__img{
+        display: block;
+
+        
+    }
+
+    &__text{
+        column-count: 2;
+        column-gap: 2rem;
+        column-rule: .1rem solid $color-white;
+
+        hyphens: auto;
+    }
+}

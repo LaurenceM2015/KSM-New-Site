@@ -100,7 +100,7 @@ h2, h3, h4 {
 
 .section-primary {
   background: #e56664;
-  color: #fff; }
+  color: #fff !important; }
 
 .section-dark {
   background-color: #191919; }
@@ -110,7 +110,7 @@ h2, h3, h4 {
 
 .section-secondary {
   background: #e44d26;
-  color: #fff; }
+  color: #fff !important; }
 
 .section-title {
   padding: 10px;
@@ -266,6 +266,15 @@ h2, h3, h4 {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.article__img {
+  display: block; }
+
+.article__text {
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 0.1rem solid #fff;
+  hyphens: auto; }
 
 /* =========================*/
 /* Botton components 		*/
