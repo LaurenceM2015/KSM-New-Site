@@ -358,31 +358,62 @@ h2, h3, h4 {
     width: 3rem; }
 
 .composition {
-  position: relative; }
+  position: relative;
+  margin: 0 1.5rem; }
+  @media only screen and (min-width: 62.5em) {
+    .composition {
+      margin: 0;
+      margin-left: 2.5rem; } }
   .composition__photo {
-    width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    position: absolute;
-    z-index: 10;
-    transition: all .2s;
-    outline-offset: 2rem; }
+    float: left;
+    position: relative;
+    width: 33.33333333%;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
+    @media only screen and (min-width: 50em) {
+      .composition__photo {
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+        border-radius: .2rem;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem; } }
     .composition__photo--p1 {
-      left: 0;
-      top: -2rem; }
+      top: 0;
+      transform: scale(1.2); }
+      @media only screen and (min-width: 50em) {
+        .composition__photo--p1 {
+          left: 0;
+          top: -2rem;
+          transform: none; } }
     .composition__photo--p2 {
-      right: 0;
-      top: 2rem; }
+      top: -1rem;
+      transform: scale(1.3);
+      z-index: 100; }
+      @media only screen and (min-width: 50em) {
+        .composition__photo--p2 {
+          right: 0;
+          top: 2rem;
+          z-index: 10;
+          transform: none; } }
     .composition__photo--p3 {
-      left: 20%;
-      top: 10rem; }
-    .composition__photo:hover {
-      outline: 1.5rem solid #fff;
-      transform: scale(1.05) translateY(-0.5rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      z-index: 20; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
+      top: 1rem;
+      left: 0;
+      transform: scale(1.1); }
+      @media only screen and (min-width: 50em) {
+        .composition__photo--p3 {
+          left: 20%;
+          top: 10rem;
+          transform: none; } }
+    @media only screen and (min-width: 50em) {
+      .composition__photo:hover {
+        outline: 1.5rem solid #fff;
+        transform: scale(1.05) translateY(-0.5rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20; } }
+  @media only screen and (min-width: 50em) {
+    .composition:hover .composition__photo:not(:hover) {
+      transform: scale(0.95); } }
 
 .stage__box {
   padding-left: 5rem;
