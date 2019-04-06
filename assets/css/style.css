@@ -193,6 +193,8 @@ h2, h3, h4 {
     background-image: linear-gradient(to right, #823a39, #d92b28); }
   .heading-secondary--2 {
     background-image: linear-gradient(to right, #fff, #d92b28); }
+  .heading-secondary--3 {
+    background-image: linear-gradient(to right, #fff, #f4f4f4); }
 
 .heading-tertiary {
   text-transform: capitalize;
@@ -354,6 +356,33 @@ h2, h3, h4 {
     border-color: #e56664;
     border-width: 0.25rem;
     width: 3rem; }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #fff;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .stage__box {
   padding-left: 5rem;
