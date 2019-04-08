@@ -35,8 +35,12 @@
     &__link{
         text-transform: uppercase;
         color: $color-text !important;
-        font-size: .9rem;
+        font-size: .8rem;
         transition: background-color .3s ease-in-out;
+
+        @include respond(tab-land){
+            font-size: .9rem;
+        }
 
         &:hover{
             background-color:$color-primary !important;
