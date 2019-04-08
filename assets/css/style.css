@@ -256,14 +256,27 @@ small {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.article__left {
+  display: flex;
+  flex-direction: row; }
+  @media only screen and (min-width: 62.5em) {
+    .article__left {
+      flex-direction: column; } }
+
 .article__img {
-  display: block; }
+  width: 50%; }
+  @media only screen and (min-width: 62.5em) {
+    .article__img {
+      width: 100%; } }
 
 .article__text {
-  column-count: 2;
-  column-gap: 2rem;
-  column-rule: 0.1rem solid #fff;
-  hyphens: auto; }
+  font-size: 1.2rem; }
+  @media only screen and (min-width: 62.5em) {
+    .article__text {
+      column-count: 2;
+      column-gap: 2rem;
+      column-rule: 0.1rem solid #fff;
+      hyphens: auto; } }
 
 /* =========================*/
 /* Botton components 		*/
@@ -355,14 +368,15 @@ small {
     border-width: 0.25rem;
     width: 3rem; }
 
-.portfolio-item {
+.gallery__item {
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 530px;
+  max-width: 53rem;
   margin: auto auto 1rem; }
-  .portfolio-item .caption {
+  .gallery__item .caption {
     display: flex;
+    justify-content: center;
     height: 100%;
     width: 100%;
     background-color: rgba(108, 117, 125, 0.2);
@@ -370,36 +384,37 @@ small {
     top: 0;
     bottom: 0;
     z-index: 1; }
-    .portfolio-item .caption .caption-content {
+    .gallery__item .caption .caption-content {
       color: #fff;
       margin: auto 2rem 2rem; }
-      .portfolio-item .caption .caption-content h2 {
-        font-size: 0.8rem;
+      .gallery__item .caption .caption-content h4 {
+        color: #fff;
+        text-align: center;
         text-transform: uppercase; }
-      .portfolio-item .caption .caption-content p {
+      .gallery__item .caption .caption-content p {
         font-weight: 300;
         font-size: 1.2rem; }
   @media only screen and (min-width: 50em) {
-    .portfolio-item {
+    .gallery__item {
       max-width: none;
       margin: 0; }
-      .portfolio-item .caption {
+      .gallery__item .caption {
         -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
         -webkit-clip-path: inset(0px);
         clip-path: inset(0px); }
-        .portfolio-item .caption .caption-content {
+        .gallery__item .caption .caption-content {
           transition: opacity 0.25s;
           margin-left: 5rem;
           margin-right: 5rem;
           margin-bottom: 5rem; }
-      .portfolio-item img {
+      .gallery__item img {
         -webkit-transition: -webkit-clip-path 0.25s ease-out;
         -webkit-clip-path: inset(-1px);
         clip-path: inset(-1px); }
-      .portfolio-item:hover img {
+      .gallery__item:hover img {
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem); }
-      .portfolio-item:hover .caption {
+      .gallery__item:hover .caption {
         background-color: rgba(229, 102, 100, 0.9);
         -webkit-clip-path: inset(2rem);
         clip-path: inset(2rem); } }
