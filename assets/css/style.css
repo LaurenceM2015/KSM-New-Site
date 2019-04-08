@@ -105,40 +105,27 @@ h2, h3, h4 {
 .section-dark {
   background-color: #191919; }
 
-.email a {
+a {
   color: #e56664; }
 
 .section-secondary {
-  background: #e44d26;
+  background: #e56664;
   color: #fff !important; }
 
-.section-title {
-  padding: 10px;
-  background: #e56664;
-  color: #fff; }
-
-.section-title small {
-  color: #ccc !important; }
+small {
+  color: #6c757d !important; }
 
 .slogan {
   text-align: center; }
-
-.slogan h1 {
-  font-size: 50px;
-  margin-bottom: 25px; }
-
-.slogan p {
-  font-size: 20px; }
-
-.slogan a {
-  margin-top: 20px; }
+  .slogan a {
+    margin-top: 2rem; }
 
 .fa-color {
   color: #e56664; }
 
 .feature-list .nav-item {
   list-style: none;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 2em; }
 
 .heading-primary {
@@ -215,6 +202,8 @@ h2, h3, h4 {
   padding-bottom: .9rem;
   margin: 4rem 0 2rem;
   border-bottom: 0.1rem solid #2C3E50; }
+  .page-header--1 {
+    border-bottom: 0.1rem solid #fff; }
 
 .u-text-uppercase {
   text-transform: uppercase; }
@@ -416,7 +405,7 @@ h2, h3, h4 {
           transform: none; } }
     @media only screen and (min-width: 50em) {
       .composition__photo:hover {
-        outline: 1.5rem solid #fff;
+        outline: 1.5rem solid #e56664;
         transform: scale(1.05) translateY(-0.5rem);
         box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
         z-index: 20; } }
@@ -455,7 +444,8 @@ footer {
 
 /* MAIN NAVIGATION */
 .navbar {
-  background-color: #fff !important; }
+  background-color: #fff !important;
+  height: 5rem; }
   @media only screen and (min-width: 50em) {
     .navbar {
       transition: background-color .5s ease-in-out,padding .5s ease-in-out; } }
@@ -525,3 +515,6 @@ footer {
   height: 85vh;
   color: #fff;
   background-attachment: fixed; }
+
+.section-lien img {
+  height: 6rem; }

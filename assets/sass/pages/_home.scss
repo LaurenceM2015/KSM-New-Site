@@ -3,6 +3,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 85vh;
-    color: #fff;
+    color: $color-white;
     background-attachment: fixed;
+}
+
+.section-lien{
+    img{
+        height: 6rem;
+    }
 }

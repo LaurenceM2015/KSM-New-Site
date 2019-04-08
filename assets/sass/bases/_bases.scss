@@ -35,51 +35,38 @@ h2, h3, h4{color: $color-secondary;}
     background-color: #191919;
 }
 
-.email a{
-    color:#e56664;
-}
+a{color: $color-primary;}
 
 
 .section-secondary{
-    background:#e44d26;
-    color:#fff !important;
+    background: $color-primary;
+    color: $color-white !important;
     
 }
 
-.section-title{
-    padding:10px;
-    background:#e56664;
-    color:#fff;
-}
 
-.section-title small{
-    color:#ccc !important;
+
+small{
+    color:$color-grey !important;
 }
 
 .slogan{
     text-align: center;
+
+    a{
+        margin-top:2rem;
+    }
+    
 }
 
-.slogan h1{
-    font-size:50px;
-    margin-bottom:25px;
-}
-
-.slogan p{
-    font-size:20px;
-}
-
-.slogan a{
-    margin-top:20px;
-}
 
 .fa-color{
-    color:#e56664;
+    color:$color-primary;
 }
 
 .feature-list .nav-item{
     list-style: none;
-    font-size:18px;
+    font-size: 1.8rem;
     line-height: 2em;
 }
   
