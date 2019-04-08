@@ -467,9 +467,10 @@ footer {
     .navbar__link:hover {
       background-color: #e56664 !important;
       color: #fff !important; }
-  .navbar small {
-    text-transform: capitalize;
-    display: block; }
+    .navbar__link small {
+      text-transform: capitalize;
+      display: block;
+      color: inherit !important; }
 
 .navbar-nav .active > .nav-link,
 .navbar-nav .nav-link.active,
@@ -518,3 +519,20 @@ footer {
 
 .section-lien img {
   height: 6rem; }
+
+.section-bkg__img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/telethon_min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  color: #fff;
+  background-attachment: fixed; }
+
+.team__heading {
+  margin-top: 1rem; }
+
+.team__title span {
+  display: block; }
+
+.team__title--sub {
+  color: #e56664; }

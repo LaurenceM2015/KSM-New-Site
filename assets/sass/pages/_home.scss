@@ -12,3 +12,33 @@
         height: 6rem;
     }
 }
+
+.section-bkg__img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/telethon_min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    color: $color-white;
+    background-attachment: fixed;
+}
+
+.team{
+
+    &__heading{
+        margin-top: 1rem;
+    }
+
+    &__title{
+
+        span{
+            display: block;
+        }
+
+        &--sub{
+            color: $color-primary;
+        }
+
+
+    }
+
+}
