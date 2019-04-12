@@ -2,13 +2,14 @@
   
 .navbar{
     background-color: $color-white !important;
-    height: 5rem;
+    transition: background-color .5s ease-in-out,padding .5s ease-in-out;
+    height: auto;
 
     
    
 
-    @include respond(tab-port){
-        transition: background-color .5s ease-in-out,padding .5s ease-in-out;
+    @include respond(tab-land){
+        height: 5rem;
     }
 
      &__toggler-button{
@@ -26,9 +27,14 @@
 
     &__item{
         //color: $color-primary !important;
+        
         &:not(:last-child){
             margin-right: 1rem;
-            border-right:1px solid #ccc !important;
+           // border-right:1px solid #ccc !important;
+        }
+
+        @include respond(tab-land){
+            text-align: center;
         }
     }
 

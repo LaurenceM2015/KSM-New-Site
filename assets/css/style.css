@@ -608,10 +608,11 @@ footer {
 /* MAIN NAVIGATION */
 .navbar {
   background-color: #fff !important;
-  height: 5rem; }
-  @media only screen and (min-width: 50em) {
+  transition: background-color .5s ease-in-out,padding .5s ease-in-out;
+  height: auto; }
+  @media only screen and (min-width: 62.5em) {
     .navbar {
-      transition: background-color .5s ease-in-out,padding .5s ease-in-out; } }
+      height: 5rem; } }
   .navbar__toggler-button {
     background-color: #e56664 !important;
     border-color: #fc6f46 !important;
@@ -620,8 +621,10 @@ footer {
   .navbar__logo-img {
     height: 5rem; }
   .navbar__item:not(:last-child) {
-    margin-right: 1rem;
-    border-right: 1px solid #ccc !important; }
+    margin-right: 1rem; }
+  @media only screen and (min-width: 62.5em) {
+    .navbar__item {
+      text-align: center; } }
   .navbar__link {
     text-transform: uppercase;
     color: #200e0e !important;
