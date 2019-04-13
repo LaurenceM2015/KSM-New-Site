@@ -45,12 +45,15 @@
         transition: background-color .3s ease-in-out;
 
         @include respond(tab-land){
-            font-size: .9rem;
+          //font-size: .9rem;
         }
 
         &:hover{
-            background-color:$color-primary !important;
-            color: $color-white !important; 
+            @include respond(tab-land){
+                background-color:$color-primary !important;
+                color: $color-white !important; 
+            }
+                
         }
 
         small{

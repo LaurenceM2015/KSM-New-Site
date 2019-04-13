@@ -631,11 +631,9 @@ footer {
     font-size: .8rem;
     transition: background-color .3s ease-in-out; }
     @media only screen and (min-width: 62.5em) {
-      .navbar__link {
-        font-size: .9rem; } }
-    .navbar__link:hover {
-      background-color: #e56664 !important;
-      color: #fff !important; }
+      .navbar__link:hover {
+        background-color: #e56664 !important;
+        color: #fff !important; } }
     .navbar__link small {
       text-transform: capitalize;
       display: block;
