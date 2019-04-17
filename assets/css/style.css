@@ -120,7 +120,7 @@ small {
   .slogan a {
     margin-top: 2rem; }
 
-.fa-color {
+.fa-color, .fas {
   color: #e56664; }
 
 .feature-list .nav-item {
