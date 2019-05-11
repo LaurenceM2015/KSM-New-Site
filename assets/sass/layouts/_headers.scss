@@ -10,6 +10,8 @@
     background-attachment: scroll;
     background-size: cover;
 
+    // implementing a responsive image with Resolution Switching
+
     @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
         background: linear-gradient(
             to right bottom,

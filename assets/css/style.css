@@ -259,19 +259,6 @@ figure {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-.article__left {
-  display: flex;
-  flex-direction: row; }
-  @media only screen and (min-width: 62.5em) {
-    .article__left {
-      flex-direction: column; } }
-
-.article__img {
-  width: 50%; }
-  @media only screen and (min-width: 62.5em) {
-    .article__img {
-      width: 100%; } }
-
 .article__text {
   font-size: 1.2rem; }
   @media only screen and (min-width: 62.5em) {
@@ -690,9 +677,6 @@ footer {
   height: 85vh;
   color: #fff;
   background-attachment: fixed; }
-
-.section-lien img {
-  height: 6rem; }
 
 .section-bkg__img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/telethon_min.jpg);

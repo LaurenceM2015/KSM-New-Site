@@ -8,8 +8,15 @@
 }
 
 .section-lien{
+    .client{
+       
+    }
     img{
-        height: 6rem;
+        @include respond(tab-land){
+           
+        }
+        
+       
     }
 }
 
