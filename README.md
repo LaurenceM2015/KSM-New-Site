@@ -9,7 +9,7 @@ Technology: HTML5, CSS3, Bootstrap, JavaScript, jQuery, Sass and PHP. -->
     <ul>
         <li>Full width image section</li>
         <li>Logo on top of hero image for header</li>
-        <li>Parallax Scrolling Effect</li>
+        <li>Parallax Scrolling Effect with CSS3 and JavaScript</li>
         <li>Parallax background image</li>
         <!-- For better Web Performance -->
         <li>Advance responsive image ussing: Resolution Switching, Density Switching, and Art Direction</li>
