@@ -27,3 +27,19 @@
   });
 
 })(jQuery); // End of use strict
+
+// PARALLAX BACKGROUND IMAGE WITH JAVASCRIPT
+
+const paralaxBkgimgJS = document.getElementById("paralaxBkgimgJS");
+
+
+  window.addEventListener("scroll", function(){
+    let offset = window.pageYOffset;
+    paralaxBkgimgJS.style.backgroundPositionY = offset * 0.4 + "px";
+    
+   // console.log('offset: ' + offset);
+   // console.log('offset * 0.7' + offset * 07);
+
+  });
+
+ 
