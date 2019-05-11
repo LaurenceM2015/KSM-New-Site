@@ -35,34 +35,11 @@ const paralaxBkgimgJS = document.getElementById("paralaxBkgimgJS");
 
   window.addEventListener("scroll", function(){
     let offset = window.pageYOffset;
-    paralaxBkgimgJS.style.backgroundPositionY = offset * 
-    0.7 + "px";
+    paralaxBkgimgJS.style.backgroundPositionY = offset * 0.4 + "px";
     
    // console.log('offset: ' + offset);
    // console.log('offset * 0.7' + offset * 07);
 
-  })
+  });
 
-  // PARALLAX AFFECT WITH JQUERY
-
-  // check for the window scroll 
-  $(window).scroll(function(){
-    parallax();
-  })
-
-
-  // PARALLAX FUNCTION 
-
-  function parallax() {
-    // track the screen scrolling 
-    var wScroll = $(window).scrollTop();
-    //console.log(wScroll);
-
-    // select the bkg parrallax 
-
-    $('.parallex--bg-js').css('background-position', 'fixed ' +(wScroll * 0.75)+'px')
-
-    $('.parallex--box-js').css('top', (wScroll *0.25)+'px')
-
-
-  }
+ 
