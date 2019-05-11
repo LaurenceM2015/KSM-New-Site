@@ -16,7 +16,7 @@ Technology: HTML5, CSS3, Bootstrap, JavaScript, jQuery, Sass and PHP. -->
     </ul>
 
 <h3>Technology Used:</h3>
-    <p> Bootstrap, HTML5, CSS3, JavasCript, jQuery, SASS,  NPM. </p>
+    <p> Bootstrap, HTML5, CSS3, JavasCript, jQuery, SASS,  NPM and git. </p>
     <p>Category: Responsive Design, Single Page</p>
     <p>Date: July 2019 Template</p>
 
