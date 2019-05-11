@@ -22,6 +22,12 @@ Technology: HTML5, CSS3, Bootstrap, JavaScript, jQuery, Sass and PHP. -->
     <p>Date: July 2017 Template</p>
 
 <button><a href="http://karateshotokanmardie.com/" target="_blank">Visite the site –</a></button>
+
+<!--
+    The minimum resolution on most computer screens is 1024 x 768 pixels, so we recommend a hero image of around 1600 x 500 pixels so you can maintain a 16:9 ratio as a good rule of thumb
+
+    Resolution switching for the background css image
+-->
                             
                         
 
