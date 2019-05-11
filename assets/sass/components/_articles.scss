@@ -1,14 +1,7 @@
 .article{
     @include respond(tab-port){  
     }
-    &__left{
-      
-    }
-
-    &__img{
-        
-       
-    }
+   
 
     &__text{
         font-size: 1.2rem;
@@ -26,9 +19,6 @@
 
 .bloginfo{
     
-    &__box{
-
-    }
 
     &__img-box{
         text-align: center !important;

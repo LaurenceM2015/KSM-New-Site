@@ -419,9 +419,10 @@ figure {
     .composition:hover .composition__photo:not(:hover) {
       transform: scale(0.95); } }
 
-.stage__box {
-  padding-left: 5rem;
-  padding-right: 5rem; }
+@media only screen and (min-width: 50em) {
+  .stage__box {
+    padding-left: 5rem;
+    padding-right: 5rem; } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -583,7 +584,7 @@ footer {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(img/bg-min.jpg);
       background-position: center;
@@ -671,12 +672,20 @@ footer {
           width: 30%; } }
 
 .section-stage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/karate-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/karate-min-small.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 85vh;
   color: #fff;
   background-attachment: fixed; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .section-stage {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/karate-min.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 85vh;
+      color: #fff;
+      background-attachment: fixed; } }
 
 .section-bkg__img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/telethon_min.jpg);

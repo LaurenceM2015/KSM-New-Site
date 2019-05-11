@@ -1,7 +1,11 @@
 .stage{
     &__box{
-        padding-left: 5rem;
-        padding-right: 5rem;
+       
+
+        @include respond(tab-port){
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
     }
 }
 
