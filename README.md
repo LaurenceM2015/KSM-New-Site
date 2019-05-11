@@ -13,13 +13,12 @@ Technology: HTML5, CSS3, Bootstrap, JavaScript, jQuery, Sass and PHP. -->
         <li>Parallax background image</li>
         <!-- For better Web Performance -->
         <li>Advance responsive image ussing: Resolution Switching, Density Switching, and Art Direction</li>
-
     </ul>
 
 <h3>Technology Used:</h3>
-    <p>HTML5, CSS3, JavasCript, jQuery. </p>
+    <p> Bootstrap, HTML5, CSS3, JavasCript, jQuery, SASS,  NPM. </p>
     <p>Category: Responsive Design, Single Page</p>
-    <p>Date: July 2017 Template</p>
+    <p>Date: July 2019 Template</p>
 
 <button><a href="http://karateshotokanmardie.com/" target="_blank">Visite the site –</a></button>
 
