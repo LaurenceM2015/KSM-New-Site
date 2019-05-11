@@ -42,4 +42,8 @@ const paralaxBkgimgJS = document.getElementById("paralaxBkgimgJS");
 
   });
 
+  // PARALLAX IMAGE WITH JQUERY PLUGIN
+
+  $('.parallax-BkgImg-jg').parallax({imageSrc: 'assets/css/img/karate-min.jpg'});
+
  

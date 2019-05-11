@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     
     
+    <!-- Annimate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -229,7 +234,7 @@
     </section><!-- a propos de nous -->
 
     <!-- Section Les Stage bg image -->
-    <section class="section-stage page-section h-100" id="stage">
+    <section class="section-stage page-section h-100 parallax-BkgImg-jg" id="stage">
       <div class="stage parallax">
         <div class="container stage__container">
           <div class="row">
@@ -411,11 +416,12 @@
   </section>
 
   <!-- Section Les Stage -->
-  <section class="section-bkg__img section-bkg__img--1 page-section h-100">
-    <div class="container">
+  
+    <section class="section-bkg__img section-bkg__img--1 page-section h-100 parallax-window" data-z-index="1" data-parallax="scroll" data-image-src="/assets/css/img/thao-le-hoang.jpg">
+      <div class="container info">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-white">Remerciment</h2>
+          <h2 class="text-white heading-secondary heading-secondary--1">Remerciment</h2>
         </div>
       </div><!-- row 1 -->
         
@@ -751,15 +757,20 @@
 
   <footer>
     <p>Karate Shotokan Mardie Copyright &copy; 2014 - <a href="#">Term</a> &middot; <a href="#">Condition</a>
+      
   </footer>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
     <!-- jQuery library -->
-    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- jquery parallax plugin -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->

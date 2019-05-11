@@ -687,13 +687,26 @@ footer {
       color: #fff;
       background-attachment: fixed; } }
 
-.section-bkg__img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/telethon_min.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 85vh;
-  color: #fff;
-  background-attachment: fixed; }
+.parallax-BkgImg-jg {
+  background: transparent; }
+
+/*.section-bkg__img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/telethon_min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    color: $color-white;
+    background-attachment: fixed;
+}*/
+.parallax-window {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  min-height: 40rem;
+  background: transparent;
+  color: #fff; }
+
+.info {
+  z-index: 2;
+  position: relative; }
 
 .section-gallery-inline {
   padding: 0 !important;
