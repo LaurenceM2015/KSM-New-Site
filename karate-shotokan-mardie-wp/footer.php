@@ -38,7 +38,10 @@
     <script src="<?php bloginfo('template_directory') ?>/vendor/js/wow.js"></script>
     <script src="<?php bloginfo('template_directory') ?>/assets/js/main.js"></script>
     <script>
-      new WOW().init();
+	  new WOW().init();
+	  
+	  $('.parallax-BkgImg-jg').parallax({imageSrc: '<?php bloginfo('stylesheet_directory'); ?>assets/css/img/karate-min.jpg'});
+
     </script>
 
 </body>

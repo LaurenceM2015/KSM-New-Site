@@ -38,7 +38,7 @@ get_header();
                 </div>
                 <div class="col-md-5">
                   <div class="header__img animated fadeInUp text-right">
-                  <img src="assets/img/shin.jpg" alt="KSM shine">
+                  <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/shin.jpg" alt="KSM shine">
                 </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@ get_header();
           <div class="col-lg-4 my-4">
             <div class="feature-box card">
               <div class="card-img-top feature-box__img-box">
-                <img class="feature-box__img"  src="assets/img/StKarateOuverts-min.jpg" alt="Un stage était organisé pour aider le jeune garçon">
+                <img class="feature-box__img"  src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/StKarateOuverts-min.jpg" alt="Un stage était organisé pour aider le jeune garçon">
               </div>
               <div class="card-body">
                   <h4 class="card-title feature-box__text">Un stage était organisé pour aider le jeune garçon</h4>
@@ -103,7 +103,7 @@ get_header();
           <div class="col-lg-4 my-4">
             <div class="feature-box card">
               <div class="card-img-top feature-box__img-box">
-                <img class="feature-box__img"  src="assets/img/LassoSportive-min.jpg" alt="L’association sportive a plus de vingt ans">
+                <img class="feature-box__img"  src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/LassoSportive-min.jpg" alt="L’association sportive a plus de vingt ans">
               </div>
               <div class="card-body">
                   <h4 class="card-title feature-box__text">L’association sportive a plus de vingt ans</h4>
@@ -117,7 +117,7 @@ get_header();
           <div class="col-lg-4 my-4">
             <div class="feature-box card">
               <div class="card-img-top feature-box__img-box">
-                <img class="feature-box__img"  src="assets/img/stageMemorial-min.jpg" alt="Un stage mémorable pour les 20 ans du KSM">
+                <img class="feature-box__img"  src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/stageMemorial-min.jpg" alt="Un stage mémorable pour les 20 ans du KSM">
               </div>
               <div class="card-body">
                   <h4 class="card-title feature-box__text">Un stage mémorable pour les 20 ans du KSM</h4>
@@ -148,7 +148,7 @@ get_header();
           <div class="row align-items-center no-gutters mb-4 mb-lg-5">
               <div class="col-xl-5 col-lg-7">
                 <div class="text-center wow fadeInLeft">
-                  <img class="img-fluid mb-3 mb-lg-0" src="assets/img/profs3.jpg" alt="Les Professeurs de KSM, Valerie Mabilleau et Fabien Poulin">
+                  <img class="img-fluid mb-3 mb-lg-0" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profs3.jpg" alt="Les Professeurs de KSM, Valerie Mabilleau et Fabien Poulin">
                 </div>
                
               </div>
@@ -201,7 +201,7 @@ get_header();
 
             <div class="col-lg-3 text-center my-5 animated fadeInUp parallax">
               <div>
-                  <img src="assets/img/KarateDoIdeogamme.jpg" class="img-fluid">
+                  <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/KarateDoIdeogamme.jpg" class="img-fluid">
               </div>
             </div>
 
@@ -225,7 +225,7 @@ get_header();
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
             <div class="">
-                <img class="img-fluid w-100" src="assets/img/compRenc-min.jpg" alt="">
+                <img class="img-fluid w-100" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/compRenc-min.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 align-items-center">
@@ -249,7 +249,7 @@ get_header();
            <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
           <div class="col-lg-6">
-            <img class="img-fluid" src="assets/img/valerie-min.jpg" alt="">
+            <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/valerie-min.jpg" alt="">
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project section-primary">
@@ -307,7 +307,7 @@ get_header();
                       <p class="mb-0"></p>
                     </span>
                   </span>
-                  <img class="img-fluid" src="assets/img/telethon2008-min1.jpg" alt="Téléthon 2008">
+                  <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/telethon2008-min1.jpg" alt="Téléthon 2008">
                 </div>
 
             </div>
@@ -321,7 +321,7 @@ get_header();
                       <p class="mb-0"></p>
                     </span>
                   </span>
-                  <img class="img-fluid" src="assets/img/telethon2008-min2.jpg" alt="Téléthon 2008">
+                  <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/telethon2008-min2.jpg" alt="Téléthon 2008">
               </div>
             </div>
           </div>
@@ -334,7 +334,7 @@ get_header();
                       <p class="mb-0"></p>
                     </span>
                 </span>
-                <img class="img-fluid" src="assets/img/Telethon2007-min1.jpg" alt="Téléthon 2007">
+                <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Telethon2007-min1.jpg" alt="Téléthon 2007">
               </div>
             </div>
           </div>
@@ -347,7 +347,7 @@ get_header();
                       <p class="mb-0"></p>
                     </span>
                 </span>
-                <img class="img-fluid" src="assets/img/Telethon2007-min2.jpg" alt="Téléthon 2007">
+                <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Telethon2007-min2.jpg" alt="Téléthon 2007">
               </div>
             </div>
           </div>
@@ -357,7 +357,8 @@ get_header();
 
   <!-- Section Les Stage -->
   
-    <section class="section-bkg__img section-bkg__img--1 page-section h-100 parallax-window" data-z-index="1" data-parallax="scroll" data-image-src="/assets/css/img/remerciment-min.jpg">
+    <section class="section-bkg__img section-bkg__img--1 page-section h-100 parallax-window" 
+    data-z-index="1" data-parallax="scroll" data-image-src="<?php bloginfo('stylesheet_directory'); ?>/assets/css/img/remerciment-min.jpg">
       <div class="container info">
       <div class="row">
         <div class="col-md-12">
@@ -398,8 +399,8 @@ get_header();
         <div class="col-lg-4">
           <div class="article h-100 wow fadeInLeft">
             <div class="article__left h-100 w-100">
-                <img src="assets/img/terredesenfant1.jpg" alt="Stage" class="img-fluid w-100 article__img">
-                <img src="assets/img/terredesenfant2.jpg" alt="Stage" class="img-fluid w-100 article__img">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/terredesenfant1.jpg" alt="Stage" class="img-fluid w-100 article__img">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/terredesenfant2.jpg" alt="Stage" class="img-fluid w-100 article__img">
             </div>
           </div>
         </div>
@@ -428,64 +429,64 @@ get_header();
   <!-- div gallery -->
 
   <section class="section-gallery">
-  <div class="row no-gutters galleryShowcase">
+    <div class="row no-gutters galleryShowcase">
 
-    <div class="col-md-2 col-md-4">
-      <div class="parent" onclick="">
-        <div class="child bg-three">
-          <img src="assets/img/Afrique/Bamako-Mali-afrique1-min.jpg" alt="">
-          <span>Bamako, Mali</span>
+        <div class="col-md-2 col-md-4">
+        <div class="parent" onclick="">
+            <div class="child bg-three">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Afrique/Bamako-Mali-afrique1-min.jpg" alt="">
+            <span>Bamako, Mali</span>
+            </div>
         </div>
-      </div>
-    </div><!-- ./ box 1 -->
+        </div><!-- ./ box 1 -->
 
-    <div class="col-md-2 col-md-4">
-      <div class="parent right" onclick="">
-        <div class="child bg-four">
-          <img src="assets/img/Afrique/Bamako-Mali-afrique2-min.jpg" alt="">
-          <span>Bamako, Mali</span>
+        <div class="col-md-2 col-md-4">
+        <div class="parent right" onclick="">
+            <div class="child bg-four">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Afrique/Bamako-Mali-afrique2-min.jpg" alt="">
+            <span>Bamako, Mali</span>
+            </div>
         </div>
-      </div>
-    </div> <!-- ./ box 2 -->
+        </div> <!-- ./ box 2 -->
 
-    <div class="col-md-2 col-md-4">
-      <div class="parent" onclick="">
-        <div class="child bg-five">
-          <img src="assets/img/Afrique/Senegal-Dakar-affique-min.jpg" alt="">
-          <span>Dakar, Senegal</span>
+        <div class="col-md-2 col-md-4">
+        <div class="parent" onclick="">
+            <div class="child bg-five">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Afrique/Senegal-Dakar-affique-min.jpg" alt="">
+            <span>Dakar, Senegal</span>
+            </div>
         </div>
-      </div>
-    </div><!-- ./ box 3 -->
-      
-    <div class="col-md-2 col-md-4">
-      <div class="parent right" onclick="">
-        <div class="child bg-six">
-          <img src="assets/img/Afrique/cote-ivoire-afrique-min.jpg" alt="">
-          <span>Cote d'Ivoire, Afrique</span>
+        </div><!-- ./ box 3 -->
+        
+        <div class="col-md-2 col-md-4">
+        <div class="parent right" onclick="">
+            <div class="child bg-six">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Afrique/cote-ivoire-afrique-min.jpg" alt="">
+            <span>Cote d'Ivoire, Afrique</span>
+            </div>
         </div>
-      </div>
-    </div> <!-- ./ box 4-->
+        </div> <!-- ./ box 4-->
 
 
-    <div class="col-md-2 col-md-4">
-      <div class="parent" onclick="">
-        <div class="child bg-one">
-          <img src="assets/img/Afrique/fabien-min.jpg" alt="">
-          <span>Fabien En Afrique</span>
+        <div class="col-md-2 col-md-4">
+        <div class="parent" onclick="">
+            <div class="child bg-one">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Afrique/fabien-min.jpg" alt="">
+            <span>Fabien En Afrique</span>
+            </div>
         </div>
-      </div>
-    </div><!-- ./ box 5 -->
+        </div><!-- ./ box 5 -->
 
-    <div class="col-md-2 col-md-4">
-      <div class="parent right" onclick="">
-        <div class="child bg-two">
-          <img src="assets/img/Afrique/fabien1-min.jpg" alt="">
-          <span>Fabien En Afrique</span>
+        <div class="col-md-2 col-md-4">
+        <div class="parent right" onclick="">
+            <div class="child bg-two">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Afrique/fabien1-min.jpg" alt="">
+            <span>Fabien En Afrique</span>
+            </div>
         </div>
-      </div>
+        </div>
+        
     </div>
-      
-  </div>
   </section>
 
 

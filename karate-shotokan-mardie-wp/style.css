@@ -1081,8 +1081,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 			width: 30%; } }
   
   .section-stage {
-		
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/wp-content/themes/karate-shotokan-mardie/assets/css/img/karate-min-small.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("wp-content/themes/karate-shotokan-mardie/assets/css/img/karate-min-small.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 85vh;
@@ -1090,7 +1089,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 	background-attachment: fixed; }
 	@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
 	  .section-stage {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/wp-content/themes/karate-shotokan-mardie/assets/css/img/karate-min.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("wp-content/themes/karate-shotokan-mardie/assets/css/img/karate-min.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 85vh;
