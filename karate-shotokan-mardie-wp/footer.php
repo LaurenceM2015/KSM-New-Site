@@ -11,26 +11,35 @@
 
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'karate-shotokan-mardie' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'karate-shotokan-mardie' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'karate-shotokan-mardie' ), 'karate-shotokan-mardie', '<a href="http://laurencemabilleau.com/">Laurence Mabilleau</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	
 
 <?php wp_footer(); ?>
+
+<footer>
+    <p>Karate Shotokan Mardie Copyright &copy; 2014 - <a href="#">Term</a> &middot; <a href="#">Condition</a>
+      
+  </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- jquery parallax plugin -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+  <script src="<?php bloginfo('template_directory') ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="<?php bloginfo('template_directory') ?>/vendor/js/wow.js"></script>
+    <script src="<?php bloginfo('template_directory') ?>/assets/js/main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
 </body>
 </html>
