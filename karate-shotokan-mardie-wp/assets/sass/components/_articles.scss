@@ -1,0 +1,27 @@
+.article{
+    @include respond(tab-port){  
+    }
+   
+
+    &__text{
+        font-size: 1.2rem;
+        @include respond(tab-land){
+            column-count: 2;
+            column-gap: 2rem;
+            column-rule: .1rem solid $color-white;
+    
+            hyphens: auto;
+
+        }
+       
+    }
+}
+
+.bloginfo{
+    
+
+    &__img-box{
+        text-align: center !important;
+        
+    }
+}

@@ -1,0 +1,93 @@
+ /* MAIN NAVIGATION */
+  
+.navbar{
+    background-color: $color-white !important;
+    transition: background-color .5s ease-in-out,padding .5s ease-in-out;
+    height: auto;
+
+    @include respond(tab-land){
+        height: 5rem;
+    }
+
+     &__toggler-button{
+        background-color:$color-primary !important;
+        border-color: $color-primary-light !important;
+        border: none;
+        border-radius: 0;
+     }
+
+    
+
+    &__logo-img{
+        height: 5rem;
+    }
+
+    &__item{
+        //color: $color-primary !important;
+        
+        &:not(:last-child){
+            margin-right: 1rem;
+           // border-right:1px solid #ccc !important;
+        }
+
+        @include respond(tab-land){
+            text-align: center;
+        }
+    }
+
+    &__link{
+        text-transform: uppercase;
+        color: $color-text !important;
+        font-size: .8rem;
+        transition: background-color .3s ease-in-out;
+
+        @include respond(tab-land){
+          //font-size: .9rem;
+        }
+
+        &:hover{
+            @include respond(tab-land){
+                background-color:$color-primary !important;
+                color: $color-white !important; 
+            }
+                
+        }
+
+        small{
+            text-transform: capitalize;
+            display: block;
+            color: inherit !important;
+        }
+
+    }
+
+    
+
+    
+}
+
+
+.navbar-nav .active>.nav-link, 
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show, 
+.navbar-nav .show>.nav-link{
+   background-color:$color-primary !important;
+   color: $color-white !important;
+   
+}
+
+.navbar-dark .navbar-toggler-icon{
+    
+    color: $color-white !important;
+}
+
+.js-scroll-trigger{
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    transition-property: transform;
+    transition-duration: 1s;
+   
+    
+}

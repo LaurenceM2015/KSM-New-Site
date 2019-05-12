@@ -1,0 +1,57 @@
+@keyframes moveInLeft {
+    // at the start the element is invisible. 
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    // at the middle 
+    80% {
+        transform: translateX(2rem);
+    }
+
+    // at the end the element are visible again
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+@keyframes moveInRight {
+    // at the start the element is invisible. 
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    // at the middle 
+    80% {
+        transform: translateX(-2rem);
+    }
+
+    // at the end the element are visible again
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+// ANIMATION BUTTON
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fade{
+    0%{opacity:0;}
+    
+    100%{opacity:1}
+}

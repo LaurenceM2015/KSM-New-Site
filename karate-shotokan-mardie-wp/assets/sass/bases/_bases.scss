@@ -1,0 +1,77 @@
+// ALL THE TYPOGRAPHY 
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #555;
+}
+
+h1, h2{
+    text-transform: uppercase;
+    text-align: center !important;
+    font-weight: 700;
+    
+}
+
+h2, h3, h4{color: $color-secondary;}
+
+
+.page-section{
+    padding: 8rem 0;
+}
+
+.section-gray{
+    background:#f4f4f4;
+}
+
+.section-primary{
+    background:#e56664;
+    color:#fff !important;
+    
+}
+
+.section-dark{
+    background-color: #191919;
+}
+
+a{color: $color-primary;}
+
+
+.section-secondary{
+    background: $color-primary;
+    color: $color-white !important;
+    
+}
+
+
+
+small{
+    color:$color-grey !important;
+}
+
+.slogan{
+    text-align: center;
+
+    a{
+        margin-top:2rem;
+    }
+    
+}
+
+
+.fa-color, .fas{
+    color:$color-primary;
+}
+
+.feature-list .nav-item{
+    list-style: none;
+    font-size: 1.8rem;
+    line-height: 2em;
+}
+  
+
+figure{
+    margin: 0 !important;
+}
+  
