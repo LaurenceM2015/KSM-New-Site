@@ -20,56 +20,58 @@
 $course_url				= get_post_meta( 11, 'course_url', true );
 $button_text			= get_post_meta( 11, 'button_text', true );
 
+// ADVANCED CUSTOMER FIELD
+
+// Section Introduction
+$introduction_section_title         = get_field('introduction_section_title');
+$introduction_section_description   = get_field('introduction_section_description');
+$introduction_section_button        = get_field('introduction_section_button');
+
 get_header();
 ?>
       <!-- main Header -->
     <header class="header text-white" id="paralaxBkgimgJS">
-        <div class="header__jumbotron jumbotron-fluid">
-            <div class="container header__container h-100">
-                <div class="row h-100 align-items-center justify-content-center">
-                  <div class="col-md-7">
-                    <div class="header__text hero-text animated fadeInLeft">
-                        <h1 class="text-left"><?php bloginfo('name'); ?></h1>
-                        <div class="">
-                          <p class="lead my-5"><?php bloginfo('description'); ?></p>
-                          <a class="js-scroll-trigger btn btn--orange" href="#<?php echo $course_url; ?>"><?php echo $button_text; ?></a>
-                        </div>
-                    </div>
+      <div class="header__jumbotron jumbotron-fluid">
+        <div class="container header__container h-100">
+          <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-md-7">
+              <div class="header__text hero-text animated fadeInLeft">
+                  <h1 class="text-left"><?php bloginfo('name'); ?></h1>
+                  <div class="">
+                    <p class="lead my-5"><?php bloginfo('description'); ?></p>
+                    <a class="js-scroll-trigger btn btn--orange" href="#<?php echo $course_url; ?>"><?php echo $button_text; ?></a>
                   </div>
-                  <div class="col-md-5">
-                    <div class="header__img animated fadeInUp text-right">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/shin.jpg" alt="KSM shine">
-                  </div>
-                  </div>
-                </div>
               </div>
-        </div>
-    </header>
-
-     <!-- Slogan with primary color -->
-    <section class="section-primary slogan slogan--img" id="slogan">
-     <div class="container">
-        <div class="row">
-          <div class="col-md-12 mt-5">
-            <h2 class="text-white heading-secondary">Le Karaté </h2>
+            </div>
+            <div class="col-md-5">
+              <div class="header__img animated fadeInUp text-right">
+              <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/shin.jpg" alt="KSM shine">
+            </div>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center">
+      </div>
+    </header>
+
+    
+        <!-- Slogan with primary color -->
+    <section class="section-primary slogan slogan--img" id="slogan">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12 mt-5">
+              <h2 class="text-white heading-secondary"><?php echo $introduction_section_title; ?></h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
               <div class="col-lg-9 u-text-center my-5">
-                 
+                
                   <p class="lead">
-                      Le karaté do (la voie du karaté) peut se pratiquer de manière sportive (compétitions) ou de manière martiale. Quelle que soit la voie choisie, le karaté est avant tout un art martial puisque la compétition n'est pas une fin en soi mais tout au plus une étape que l'on aura choisie ou non de pratiquer. 
-                      On peut faire du karaté à tout âge dans le respect de son corps et de ses capacités.
+                      <?php echo $introduction_section_description; ?>
                   </p>
-
-                  <a class="btn btn--white js-scroll-trigger" href="#apropodenous">En Savoir Plus</a>
-
+                  <a class="btn btn--white js-scroll-trigger" href="#apropodenous"><?php echo $introduction_section_button; ?></a>
               </div>
-
-             
-
-        </div>
-     </div>
+          </div>
+      </div>
     </section><!-- Le Karate -->
 
        <!-- Blog Section -->
