@@ -29,6 +29,7 @@ Technology: HTML5, CSS3, Bootstrap, JavaScript, jQuery, Sass and PHP. -->
             <li>Custom Fields</li>
             <li>Advanced Custom Field</li>
             <li>Contact Form 7</li>
+            <li>Custom Post Type UI</li>
         </ul>
     </li>
 </ul>
