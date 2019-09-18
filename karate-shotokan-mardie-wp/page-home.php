@@ -18,9 +18,6 @@
 */
 
 
-
-
-
 get_header();
 ?>
    <?php get_template_part('content','hero'); ?>
@@ -80,6 +77,8 @@ get_header();
  <?php get_template_part('content', 'clientLink'); ?>
 
  <?php get_template_part('content','contactUs'); ?>
+
+
 
 <?php
 

@@ -32,10 +32,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
 
 	 <!-- Custom styles for this template 
 	 	<link href="assets/css/style.css" rel="stylesheet">
 	 -->
+
+
+	
 	 
 
 	<?php wp_head(); ?>
@@ -71,10 +75,10 @@
 		<!-- The WordPress Primary Menu -->
 		<?php wp_nav_menu(
 			array(
-			'theme_location'    => 'Primary',
-			'menu_class'        => 'navbar-nav ml-auto w-100 justify-content-end',
-			'container_class'  => 'navbar-collapse collapse navbar-collapse',
-			'container_id'    => 'navbarResponsive',
+				'theme_location'    => 'menu-1',
+				'menu_class'        => 'navbar-nav ml-auto w-100 justify-content-end',
+				'container_class'  => 'navbar-collapse collapse navbar-collapse',
+				'container_id'    => 'navbarResponsive',
 			)
 		); ?>
 
