@@ -32,12 +32,18 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+	
+	
 
 	 <!-- Custom styles for this template 
-	 	<link href="assets/css/style.css" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	 <link href="/assets/css/style.css" rel="stylesheet">
 	 -->
-
+	 	
+		
+	 
+		
 
 	
 	 

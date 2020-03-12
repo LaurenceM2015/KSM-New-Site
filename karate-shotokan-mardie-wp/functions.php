@@ -161,5 +161,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 }
 
+function add_menuclass($ulclass) {
+	return preg_replace('/<a /', '<a class="navbar__link nav-link js-scroll-trigger"', $ulclass);
+ }
+ add_filter('wp_nav_menu','add_menuclass');
+
  
 

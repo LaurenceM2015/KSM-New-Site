@@ -1,4 +1,22 @@
 <?php
+  $section_contact_heading       = get_field('section_contact_heading');
+
+  $section_contact_address_title       = get_field('section_contact_address_title');
+  $section_contact_address_body       = get_field('section_contact_address_body');
+
+  $section_contact_telephone_title       = get_field('section_contact_telephone_title');
+  $section_contact_telephone_body       = get_field('section_contact_telephone_body');
+
+  $section_contact_email_title       = get_field('section_contact_email_title');
+  $section_contact_email_body       = get_field('section_contact_email_body');
+
+  $section_contact_tarif_title       = get_field('section_contact_tarif_title');
+  $section_contact_tarif_body       = get_field('section_contact_tarif_body');
+
+  $section_contact_tarif_icon       = get_field('section_contact_tarif_icon');
+ 
+
+  
 ?>
 
 <!-- CONTACT US -->
@@ -7,7 +25,7 @@
       <div class="animated fadeIn">
         <div class="row">
           <div class="col-md-12 mb-3 text-center text-white">
-            <h2 class="heading-secondary heading-secondary--2">Contact Nous</h2>
+            <h2 class="heading-secondary heading-secondary--2"><?php echo $section_contact_heading; ?></h2>
           </div>
         </div>
               
@@ -16,13 +34,11 @@
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-map-marked-alt mb-2"></i>
-                <h4 class="text-uppercase m-0">Address</h4>
+                <h4 class="text-uppercase m-0"><?php echo $section_contact_address_title; ?></h4>
                 <hr class="my-4">
                 <div class="text-black-50">
                   <address>
-                    <p>2 Rue Anthelme Flatet</p>
-                    <p>à Fleury Les Aubrais</p>
-                    <p>45400</p>
+                    <p><?php echo $section_contact_address_body; ?></p>
                   </address>
                 </div>
               </div>
@@ -33,15 +49,11 @@
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-mobile-alt mb-2"></i>
-                <h4 class="text-uppercase m-0">Téléphone</h4>
+                <h4 class="text-uppercase m-0"><?php echo $section_contact_telephone_title; ?></h4>
                 <hr class="my-4">
                 <div class="text-black-50">
                   <p>
-                    Fabien <abbr title="Phone"></abbr>: (33) 06 75 48 97 70
-                  </p>
-                  <p> 
-                    valerie
-                    <abbr title="Phone"></abbr>: (33) 06 76 75 50 98
+                  <?php echo $section_contact_telephone_body; ?>
                   </p>
                 </div>
               </div>
@@ -65,13 +77,16 @@
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-tags mb-2"></i>
-                <h4 class="text-uppercase m-0">Nos Tarif</h4>
+                <h4 class="text-uppercase m-0"><?php echo $section_contact_tarif_title; ?></h4>
                 <hr class="my-4">
                 <div class="text-black-50">
                   <ul class="list-unstyled list-social-icons">
-                    <li>Adultes: 189 <i class="fas fa-euro-sign"></i></li>
-                    <li>Enfants de 6 à 14 ans: 139 <i class="fas fa-euro-sign"></i></li>
-                    <li>Enfants de 15 à 18 ans: 159 <i class="fas fa-euro-sign"></i></li>
+                  
+                    <li><?php echo $section_contact_tarif_body; ?>
+                    
+                      <i class="<?php the_field('section_contact_tarif_icon'); ?>"></i>
+                     
+                    </li>
                   </ul>
                 </div>
               </div>

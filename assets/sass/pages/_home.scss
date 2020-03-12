@@ -1,5 +1,5 @@
 .section-stage{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/karate-min-small.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/css/img/karate-min-small.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 85vh;
@@ -11,7 +11,7 @@
             only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
             only screen and (min-width: 125em) {
         background-image: linear-gradient(
-            rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/karate-min.jpg);
+            rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/css/img/karate-min-small.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         height: 85vh;
@@ -23,7 +23,7 @@
 }
 
 .parallax-BkgImg-jg{
-    background: transparent;
+    background-color: transparent;
 }
 
 
@@ -38,19 +38,19 @@
     }
 }
 
-/*.section-bkg__img{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/telethon_min.jpg);
+.section-bkg__img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/css/img/hero-blog-big-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 85vh;
     color: $color-white;
     background-attachment: fixed;
-}*/
+}
 
 .parallax-window {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     min-height: 40rem;
-    background: transparent;
+    background-color: transparent;
     color: $color-white;
 
 

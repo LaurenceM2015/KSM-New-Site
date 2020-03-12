@@ -3,23 +3,25 @@
   "version": "1.0.0",
   "description": "And Bootstrap wordpress theme for business.",
   "main": "index.js",
+ 
   "scripts": {
-    "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
+    "watch:sass": "node-sass assets/sass/main.scss style.css -w",
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.comp.css",
     "devserve": "live-server",
     "start": "npm-run-all --parallel devserve watch:sass",
-    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.comp.css",
+    
     "prefix:css": "postcss --use autoprefixer -b 'last 10 version' assets/css/style.comp.css -o assets/css/style.prefix.css",
-    "compress:css": "node-sass assets/css/style.prefix.css assets/css/style.css --output-style compressed",
+    "compress:css": "node-sass assets/css/style.prefix.css style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LaurenceM2015/business_theme.git"
+    "url": "git+https://github.com/LaurenceM2015/KSM-New-Site"
   },
   "author": "Laurence Mabilleau",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LaurenceM2015/business_theme/issues"
+    "url": "https://github.com/LaurenceM2015/KSM-New-Site/issues"
   },
   "homepage": "https://github.com/LaurenceM2015/business_theme#readme",
   "dependencies": {},

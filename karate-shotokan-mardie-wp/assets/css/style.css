@@ -286,7 +286,7 @@ figure {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1rem 4rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
@@ -585,14 +585,17 @@ footer {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   /* background: -webkit-gradient(linear,left top,left bottom,from(rgba(92,77,66,.8)),to(rgba(92,77,66,.8))),url(../img/bg-masthead.jpg); */
-  background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(img/bg-min-Small.jpg);
+ /* background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(img/bg-min-Small.jpg);*/
+  background: linear-gradient(to right bottom,rgba(92,77,66,.7) 0,rgba(92,77,66,.7) 100%),url(assets/img/hero1-min.jpg);
+
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(img/bg-min.jpg);
+      /*background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(img/bg-min.jpg); */
+      background: linear-gradient(to right bottom,rgba(160, 95, 48, 0.7) 0,rgba(229, 102, 100, 0.75) 100%),url(assets/img/hero1-min.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: scroll;

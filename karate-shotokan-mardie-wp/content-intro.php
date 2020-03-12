@@ -23,7 +23,7 @@
                 <p class="lead">
                     <?php echo $introduction_section_description; ?>
                 </p>
-                <a class="btn btn--white js-scroll-trigger" href="#apropodenous"><?php echo $introduction_section_button; ?></a>
+                <a class="btn btn--white js-scroll-trigger" href="#apropodenous" target="_blank"><?php echo $introduction_section_button; ?></a>
             </div>
         </div>
      </div>
