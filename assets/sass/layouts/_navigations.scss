@@ -1,94 +1,81 @@
- /* MAIN NAVIGATION */
-  
-.navbar{
-    background-color: $color-white !important;
-    transition: background-color .5s ease-in-out,padding .5s ease-in-out;
-    height: auto;
-    padding: 0;
-
-    @include respond(tab-land){
-        height: 5rem;
+// Styling for the navbar
+#mainNav {
+    background-color: $color-grey;
+    .navbar-toggler {
+      font-size: 12px;
+      right: 0;
+      padding: 1rem;
+      text-transform: uppercase;
+      color: $color-white;
+      border: 0;
+      background-color: $color-primary;
+     
     }
-
-     &__toggler-button{
-        background-color:$color-primary !important;
-        border-color: $color-primary-light !important;
-        border: none;
-        border-radius: 0;
-     }
-
-    
-
-    &__logo-img{
-        height: 5rem;
+    .navbar-brand {
+      color: $color-primary;
+      &.active,
+      &:active,
+      &:focus,
+      &:hover {
+        color: darken($color-primary, 10%);
+      }
     }
-
-    &__item{
-        //color: $color-primary !important;
-        
-        &:not(:last-child){
-            margin-right: 1rem;
-           // border-right:1px solid #ccc !important;
-        }
-
-        @include respond(tab-land){
-            text-align: center;
-        }
-    }
-
-    &__link{
-        text-transform: uppercase;
-        color: $color-text !important;
-        font-size: .8rem;
-        transition: background-color .3s ease-in-out;
-
-        @include respond(tab-land){
-          //font-size: .9rem;
-        }
-
-        &:hover{
-            @include respond(tab-land){
-                background-color:$color-primary !important;
-                color: $color-white !important; 
-            }
-                
-        }
-
-        small{
+    .navbar-nav {
+      .nav-item {
+          text-align: center;
+        .nav-link {
+          text-transform: uppercase;
+          font-size: 90%;
+          font-weight: 400;
+          padding: 0.75em 0;
+          letter-spacing: 1px;
+          color:$color-white;
+          
+          &.active,
+          &:hover {
+            color: $color-primary;
+          }
+          small{
             text-transform: capitalize;
             display: block;
             color: inherit !important;
         }
 
+        }
+      }
     }
-
-    
-
-    
-}
-
-
-.navbar-nav .active>.nav-link, 
-.navbar-nav .nav-link.active, 
-.navbar-nav .nav-link.show, 
-.navbar-nav .show>.nav-link{
-   background-color:$color-primary !important;
-   color: $color-white !important;
-   
-}
-
-.navbar-dark .navbar-toggler-icon{
-    
-    color: $color-white !important;
-}
-
-.js-scroll-trigger{
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    transition-property: transform;
-    transition-duration: 1s;
-   
-    
-}
+  }
+  @media(min-width:992px) {
+    #mainNav {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+      -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+      transition: padding-top 0.3s, padding-bottom 0.3s;
+      border: none;
+      background-color: transparent;
+      .navbar-brand {
+        font-size: 1.75em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            padding: 1.1em 1em !important;
+          }
+        }
+      }
+      &.navbar-shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: $color-secondary;
+        .navbar-brand {
+          font-size: 1.25rem;
+          
+        }
+      }
+    }
+  }
+  

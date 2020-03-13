@@ -12,6 +12,34 @@ $breakpoint arguement choices:
 ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
+@media (min-width: 34em) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-gap: 0; } }
+
+@media (min-width: 48em) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-gap: 0; } }
+
+@media (min-width: 62em) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-gap: 0; } }
+
+@media (min-width: 75em) {
+  .card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    column-gap: 0; } }
+
 :root {
   --color-white: #fff;
   --color-primary: #e56664;
@@ -342,6 +370,12 @@ figure {
   padding: 3px;
   transition: all .2s; }
 
+.btn-text--white {
+  color: #fff !important; }
+  .btn-text--white:hover {
+    background-color: #fff !important;
+    color: #e56664 !important; }
+
 .btn-text:hover {
   background-color: #e56664;
   color: #fff;
@@ -351,6 +385,16 @@ figure {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.card-columns {
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  -o-column-gap: 0;
+  column-gap: 0; }
+  .card-columns .card {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-bottom: none !important; }
 
 .card {
   border: 0;
@@ -570,7 +614,7 @@ figure {
   background-color: rgba(229, 102, 100, 0.75); }
 
 .footer {
-  background: #fff;
+  background-color: #fff;
   border-top: 0.1rem solid #e56664; }
   .footer__logo {
     height: 55px; }
@@ -582,7 +626,7 @@ figure {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   /* background: -webkit-gradient(linear,left top,left bottom,from(rgba(92,77,66,.8)),to(rgba(92,77,66,.8))),url(../img/bg-masthead.jpg); */
-  background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(/assets/css/img/hero1-min.jpg);
+  background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(/assets/css/img/sable2008-5-min.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -603,58 +647,58 @@ figure {
 .hero-text {
   padding: 20px 0; }
 
-/* MAIN NAVIGATION */
-.navbar {
-  background-color: #fff !important;
-  transition: background-color .5s ease-in-out,padding .5s ease-in-out;
-  height: auto;
-  padding: 0; }
-  @media only screen and (min-width: 62.5em) {
-    .navbar {
-      height: 5rem; } }
-  .navbar__toggler-button {
-    background-color: #e56664 !important;
-    border-color: #fc6f46 !important;
-    border: none;
-    border-radius: 0; }
-  .navbar__logo-img {
-    height: 5rem; }
-  .navbar__item:not(:last-child) {
-    margin-right: 1rem; }
-  @media only screen and (min-width: 62.5em) {
-    .navbar__item {
-      text-align: center; } }
-  .navbar__link {
+#mainNav {
+  background-color: #6c757d; }
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 1rem;
     text-transform: uppercase;
-    color: #200e0e !important;
-    font-size: .8rem;
-    transition: background-color .3s ease-in-out; }
-    @media only screen and (min-width: 62.5em) {
-      .navbar__link:hover {
-        background-color: #e56664 !important;
-        color: #fff !important; } }
-    .navbar__link small {
-      text-transform: capitalize;
-      display: block;
-      color: inherit !important; }
+    color: #fff;
+    border: 0;
+    background-color: #e56664; }
+  #mainNav .navbar-brand {
+    color: #e56664; }
+    #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #de3b38; }
+  #mainNav .navbar-nav .nav-item {
+    text-align: center; }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      text-transform: uppercase;
+      font-size: 90%;
+      font-weight: 400;
+      padding: 0.75em 0;
+      letter-spacing: 1px;
+      color: #fff; }
+      #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+        color: #e56664; }
+      #mainNav .navbar-nav .nav-item .nav-link small {
+        text-transform: capitalize;
+        display: block;
+        color: inherit !important; }
 
-.navbar-nav .active > .nav-link,
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show,
-.navbar-nav .show > .nav-link {
-  background-color: #e56664 !important;
-  color: #fff !important; }
-
-.navbar-dark .navbar-toggler-icon {
-  color: #fff !important; }
-
-.js-scroll-trigger {
-  -webkit-transition-property: -webkit-transform;
-  -moz-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  transition-property: transform;
-  transition-duration: 1s; }
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent; }
+    #mainNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important; }
+    #mainNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #2C3E50; }
+      #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25rem; } }
 
 .projects-section {
   padding: 10rem 0; }
@@ -712,6 +756,13 @@ figure {
   z-index: 2;
   position: relative; }
 
+.section-gallery .row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.section-gallery .row > div[class*='col-'] {
+  display: flex; }
+
 .section-gallery-inline {
   padding: 0 !important;
   width: 100%; }
@@ -724,6 +775,9 @@ figure {
 
 .team__title--sub {
   color: #e56664; }
+
+.section-contact {
+  background-color: #2C3E50; }
 
 .header-blog {
   height: 85vh;

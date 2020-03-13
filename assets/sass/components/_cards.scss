@@ -1,4 +1,17 @@
 
+.card-columns{
+  -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    -o-column-gap: 0;
+    column-gap: 0;
+
+  .card{
+    margin-bottom: 0;
+    border-radius: 0;
+    border-bottom: none !important;
+  }
+}
+
 .card {
   border: 0;
   border-bottom: 0.25rem solid $color-primary;

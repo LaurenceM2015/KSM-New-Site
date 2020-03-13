@@ -63,6 +63,17 @@
 
 
 // inline gallery 
+.section-gallery{
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+     }
+     
+     .row > div[class*='col-'] {
+       display: flex;
+     }
+     
+}
 
 .section-gallery-inline {
     padding: 0 !important;
@@ -91,3 +102,4 @@
 
 }
 
+.section-contact{background-color: $color-secondary;}

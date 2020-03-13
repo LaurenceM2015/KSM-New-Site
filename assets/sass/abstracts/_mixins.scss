@@ -46,9 +46,41 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 
 
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        column-gap: 0;
+    }
+}
 
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        column-gap: 0;
+    }
+}
 
+@media (min-width: 75em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+        column-gap: 0;
+    }
+}
 
 //////////////////////////////////////////////// 
 ///// BOX SHADOW MIXINS
@@ -75,3 +107,4 @@ ORDER: Base + typography > general layout + grid > page layout > components
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
