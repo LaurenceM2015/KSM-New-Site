@@ -4,6 +4,7 @@
     background-color: $color-white !important;
     transition: background-color .5s ease-in-out,padding .5s ease-in-out;
     height: auto;
+    padding: 0;
 
     @include respond(tab-land){
         height: 5rem;

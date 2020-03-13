@@ -2,13 +2,10 @@
   
   .heading-primary {
     color: $color-white;
-    margin-bottom: 4rem;
-
     // to fix animation element shake.
     backface-visibility: hidden; 
 
     &--main {
-        font-family: Montserrat;
         display: block;
         font-size: 3.5rem;
         font-weight: 700;
