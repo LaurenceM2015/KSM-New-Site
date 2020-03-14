@@ -1,4 +1,4 @@
-@import "abstracts/functions";
+
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
@@ -11,23 +11,19 @@
 
 @import "components/articles";
 @import "components/buttons";
-@import "components/cards";
 @import "components/compositions";
 @import "components/features-box";
-@import "components/forms";
 @import "components/gallery";
-@import "components/storys";
 
 
 
 
 // SITE LAYOUTS
 @import "layouts/footer";
-@import "layouts/grids";
 @import "layouts/headers";
 @import "layouts/navigations";
 
-@import"pages/about.scss";
+@import"pages/charities.scss";
 @import"pages/home.scss";
 @import"pages/blog.scss";
 
