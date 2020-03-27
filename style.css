@@ -34,8 +34,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .card-columns {
     -webkit-column-count: 4;
     -moz-column-count: 4;
-    column-count: 4;
-    column-gap: 0; } }
+    column-count: 4; } }
 
 :root {
   --color-white: #fff;
@@ -161,9 +160,9 @@ figure {
   backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 1rem;
+    letter-spacing: .5rem;
     padding-bottom: 1rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -174,7 +173,7 @@ figure {
         */ }
     @media only screen and (min-width: 50em) {
       .heading-primary--main {
-        font-size: 4.5rem; } }
+        font-size: 4rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 1.6rem;
@@ -219,15 +218,14 @@ figure {
     margin-left: 1rem;
     font-size: 1.5rem; }
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%); }
-
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.25rem; }
   .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+p {
+  font-size: 1.25rem; }
+  p:not(:last-child) {
     margin-bottom: 3rem; }
 
 .page-header {
@@ -458,7 +456,7 @@ figure {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__img {
     width: 100%;
-    height: 17vw; }
+    height: 20vw; }
   .feature-box .card-body {
     padding: 0rem;
     padding-top: 1rem; }
@@ -618,18 +616,15 @@ figure {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   /* background: -webkit-gradient(linear,left top,left bottom,from(rgba(92,77,66,.8)),to(rgba(92,77,66,.8))),url(../img/bg-masthead.jpg); */
-  background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(/assets/css/img/sable2008-5-min.jpg);
-  background-position: center;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.7) 100%), url(/assets/css/img/bg-min.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover; }
+  background-size: cover;
+  height: 95vh; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(img/bg-min.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-      background-size: cover; } }
+      background: linear-gradient(to right bottom, rgba(92, 77, 66, 0.7) 0, rgba(92, 77, 66, 0.7) 100%), url(img/bg-min.jpg); } }
   .header__jumbotron h1 {
     font-size: 5.5rem; }
   @media (max-width: 768px) {
@@ -638,6 +633,13 @@ figure {
 
 .hero-text {
   padding: 20px 0; }
+
+#feature-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 95vh; }
 
 #mainNav {
   background-color: #6c757d; }
@@ -701,11 +703,10 @@ figure {
         padding: 0 0 0 2rem;
         border-left: 0.5rem solid #e56664; } }
   .projects-section .project-text {
-    padding: 3rem;
-    font-size: 90%; }
+    padding: 3rem; }
     @media (min-width: 992px) {
       .projects-section .project-text {
-        padding: 5rem; }
+        padding: 10%; }
         .projects-section .project-text hr {
           border-color: #e56664;
           border-width: .25rem;
@@ -725,7 +726,10 @@ figure {
       background-repeat: no-repeat;
       height: 85vh;
       color: #fff;
-      background-attachment: fixed; } }
+      background-attachment: fixed;
+      font-size: 1.25rem; }
+      .section-stage:not(:last-child) {
+        margin-bottom: 3rem; } }
 
 .parallax-BkgImg-jg {
   background-color: transparent; }
@@ -758,15 +762,6 @@ figure {
 .section-gallery-inline {
   padding: 0 !important;
   width: 100%; }
-
-.team__heading {
-  margin-top: 1rem; }
-
-.team__title span {
-  display: block; }
-
-.team__title--sub {
-  color: #e56664; }
 
 .section-contact {
   background-color: #2C3E50; }

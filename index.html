@@ -75,30 +75,27 @@
   </nav>
 
     <!-- main Header -->
-    <header class="header text-white" id="paralaxBkgimgJS">
-      <div class="header__jumbotron jumbotron-fluid">
+    <header class="header text-white fallback-image">
           <div class="container header__container h-100">
               <div class="row h-100 align-items-center justify-content-center">
-                <div class="col-md-7">
+                <div class="col-md-12">
                   
-                  <div class="header__text animated fadeInLeft">
-                      <h1 class="text-left">Karate Shotokan Mardie</h1>
+                  <div class="header__text animated text-center">
+                      <h1 class="heading-primary text-lg-left">
+                        <span class="heading-primary--main">Karate Shotokan Mardie</span>
+                      </h1>
                       <div class="">
-                        <p class="lead my-5">Les valeurs du club se trouvent dans l’effort, le bien être et la convivialité. N’hésitez pas à nous rejoindre</p>
+                        <p class="lead my-5 wow fadeInRight">Les valeurs du club se trouvent dans l’effort, le bien être et la convivialité. 
+                          <br>N’hésitez pas à nous rejoindre</p>
                         <a class="btn btn--orange" href="#slogan">En Savoir Plus</a>
                       </div>
                       
                   </div>
                   
                 </div>
-                <div class="col-md-5">
-                  <div class="header__img animated fadeInUp text-right">
-                  <img src="assets/img/shin.jpg" alt="KSM shine">
-                </div>
-                </div>
               </div>
             </div>
-      </div>
+     
 
      
       
@@ -272,7 +269,7 @@
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
                   <h4 class="text-white page-header page-header--1 mt-0">Stage aux Sable d'Olonne</h4>
-                  <p class="mb-0 text-white">
+                  <p class="mb-0">
                     Nous vous proposons également tous les ans un stage aux Sables d'Olonne avec Fabien. Si vous souhaitez vous exercer 
                     à cet art martial qu'est le karaté dans l'effort, le bien être et la convivialité, venez nous rejoindre.
                   </p>
@@ -381,17 +378,23 @@
       </div><!-- row 1 -->
         
       <div class="row justify-content-center align-items-center">
-        <div class="col-lg-9 text-center my-5">
+        <div class="col-md-3">
+          <div class="header__img animated fadeInUp text-right">
+          <img src="assets/img/shin.jpg" alt="KSM shine">
+        </div>
+        </div>
+
+        <div class="col-md-8 my-5">
           <div class="stage__box wow fadeIn h-100">
-              
-              <p class="lead text-center">
+              <p class="lead wow fadeInRight">
                 Nous tenons à remercier l'ensemble des enfants qui chaque année font preuve de sérieux, de courage, 
                 de respect et d'assiduité dans leur pratique et pendant les différentes manifestations et compétitions.
               </p>
-              
           </div>
-        
         </div>
+
+     
+
       </div>
     </div><!-- container -->
   </section>
@@ -449,12 +452,12 @@
       <h2 class="heading-secondary heading-secondary--1 mb-5 pb-5 text-center">Nos gallery</h2>
     <div class="card-columns galleryShowcase">
        
-    <div class="card">
-      <div class="parent">
+    <div class="card parent">
+     
         <div class="child">
           <img class="card-img-top img-fluid" src="assets/img/telethon2008-min1.jpg" alt="Card image cap">
           <span>Card Title</span>
-        </div>
+       
       </div>
     </div>
     <div class="card parent">
@@ -562,10 +565,10 @@
         <div class="col-xl-7 col-lg-5 wow fadeInRight">
           <div class="featured-text text-center text-lg-left">
             <h3>Depuis Le Debut</h3>
-            <p class="text-black-50 ">
+            <p class="text-black-50 mb-4">
               Le club de karaté de Mardié (KSM) à été créé en 1998 et compte aujourd'hui quelques 50 licenciés dont une trentaine d'enfants (pour qui les cours sont départagés selon qu'ils sont gradés ou débutants).
             </p>
-            <p class="text-black-50">
+            <p class="text-black-50 mb-4">
               C'est un club de proximité qui permet aux adultes et aux parents d'enfants des communes environnantes (Bou, Donnery, Fay aux Loges…) de ne pas être obligés de se déplacer plus loin. Tout au long de l'année scolaire les licenciés peuvent avoir accès à de nombreux stages.
             </p>
 
@@ -655,9 +658,8 @@
                 <hr class="my-4">
                 <div class="text-black-50">
                   <address>
-                    <p>Rue Maurice Robillard</p>
-                    <p>Mardie</p>
-                    <p>45430</p>
+                    <div class="my-0">Rue Maurice Robillard</div>
+                    <div>Mardie 45430</div>
                   </address>
                 </div>
               </div>
@@ -671,13 +673,13 @@
                 <h4 class="text-uppercase m-0">Téléphone</h4>
                 <hr class="my-4">
                 <div class="text-black-50">
-                  <p>
+                  <div class="my-0">
                     Fabien <abbr title="Phone"></abbr>: (33) 06 75 48 97 70
-                  </p>
-                  <p> 
+                  </div>
+                  <div class="my-0"> 
                     valerie
                     <abbr title="Phone"></abbr>: (33) 06 76 75 50 98
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -725,20 +727,20 @@
   <footer class="footer">
 		<div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-md-4">
+        <div class="col-md-2">
           <p><a href="/"><img class="footer__logo" src="assets/img/ksmLogo95x59.png" alt="Karate Shotokan Mardie Site"></a></p>
         </div><!-- end col -->
         <div class="col-md-4">
-          <nav class="text-center secondary-navbar navbar navbar-expand-sm">
+          <nav class="text-center secondary-navbar navbar navbar-expand-sm justify-content-center">
             <ul class="navbar-nav">
-              <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Les Enfo</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Nos Charite</a></li>
+              <li class="nav-item"><a href="" class="nav-link"><p>Home</p></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><p>Les Enfo</p></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><p>Nos Charite</p></a></li>
             </ul>
           </nav>
         </div><!-- end col -->
-        <div class="col-md-4">
-          <p class="text-right">Karate Shotokan Mardie Copyright &copy; 2014 - build by: <a href="http://laurencemalonga.com/" target="_blank">Lauence M</a></p>
+        <div class="col-md-6">
+          <p class="text-center">Karate Shotokan Mardie &copy; 2014 - build by: <a href="http://laurencemalonga.com/" target="_blank">Laurence M</a></p>
         </div><!-- end col -->
       </div>
 		</div><!-- container -->

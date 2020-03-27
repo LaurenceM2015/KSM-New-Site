@@ -9,9 +9,9 @@
     }
     .project-text {
       padding: 3rem;
-      font-size: 90%;
+     
       @media (min-width: 992px) {
-        padding: 5rem;
+        padding: 10%;
         hr {
           border-color: $color-primary;
           border-width: .25rem;
